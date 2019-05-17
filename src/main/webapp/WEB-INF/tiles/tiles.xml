@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<!-- Layout Define -->
+	<definition name="layout.web.default"
+		template="/WEB-INF/views/layout/masterpage.jsp">
+		<put-attribute name="header"
+			value="/WEB-INF/views/layout/header.jsp" />	
+		<put-attribute name="menu"
+			value="/WEB-INF/views/layout/menu.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/layout/footer.jsp" />		
+	</definition>
+	<definition name="layout.web.changepassword"
+		template="/WEB-INF/views/layout/masterpage.jsp">
+		<put-attribute name="header"
+			value="" />	
+		<put-attribute name="menu"
+			value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/layout/footer.jsp" />		
+	</definition>
+	<definition name="layout.web.forget" template="/WEB-INF/views/layout/masterpage.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/layout/forgetheader.jsp" />
+		<put-attribute name="menu"
+			value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/layout/footer.jsp" />		
+	</definition>
+	<definition name="welcome" template="/WEB-INF/views/login/index.jsp">
+		<put-attribute name="title" value="Login Page" />
+	</definition>	
+	<definition name="home" extends="layout.web.default">
+		<put-attribute name="title" value="Welcome Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/dashboard/home.jsp" />
+	</definition>
+	<definition name="web.forget" extends="layout.web.forget">
+		<put-attribute name="title" value="Forget Password" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/login/forget.jsp" />
+	</definition>
+	<definition name="web.reset" extends="layout.web.default">
+		<put-attribute name="title" value="Reset Password" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/login/resetpassword.jsp" />
+	</definition>
+	<definition name="web.rolelist" extends="layout.web.default">		
+		<put-attribute name="body" value="/WEB-INF/views/role/rolelist.jsp" />
+	</definition>
+	<definition name="web.usermanagement" extends="layout.web.default">
+		<put-attribute name="title" value="User Management" />
+		<put-attribute name="body" value="/WEB-INF/views/user/adduser.jsp" />
+	</definition>	
+	<definition name="web.thankyou" extends="layout.web.default">
+		<put-attribute name="title" value="thankyou" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/layout/thankyou.jsp" />
+	</definition>
+	<definition name="web.userlist" extends="layout.web.default">		
+		<put-attribute name="body" value="/WEB-INF/views/user/userlist.jsp" />
+	</definition>
+	<definition name="web.edituser" extends="layout.web.default">		
+		<put-attribute name="body" value="/WEB-INF/views/user/edituser.jsp" />
+	</definition>
+	<definition name="web.edituserprofile" extends="layout.web.default">		
+		<put-attribute name="body" value="/WEB-INF/views/user/editprofile.jsp" />
+	</definition>
+	<definition name="web.editrole" extends="layout.web.default">
+		<put-attribute name="body" value="/WEB-INF/views/role/editrole.jsp" />
+	</definition>
+	<definition name="web.addrole" extends="layout.web.default">
+		<put-attribute name="body" value="/WEB-INF/views/role/addrole.jsp" />
+	</definition>
+	<definition name="web.roleauthoriselist" extends="layout.web.default">		
+		<put-attribute name="body" value="/WEB-INF/views/role/roleauthorizationlist.jsp" />
+	</definition>
+	<definition name="web.editassign" extends="layout.web.default">		
+		<put-attribute name="body" value="/WEB-INF/views/role/assignpermission.jsp" />
+	</definition>	
+	<definition name="web.viewuser" extends="layout.web.default">		
+		<put-attribute name="body" value="/WEB-INF/views/user/viewuser.jsp" />
+	</definition>
+	<!--  <definition name="web.changepassword" extends="layout.web.default">		
+		<put-attribute name="body" value="/WEB-INF/views/role/changepassword.jsp" />
+	</definition> -->
+	<definition name="web.changepassword" extends="layout.web.default">
+		<put-attribute name="body" value="/WEB-INF/views/login/changepassword.jsp" />
+	</definition>
+	<definition name="web.forgetUsername" extends="layout.web.forget">
+		<put-attribute name="body" value="/WEB-INF/views/login/forgetusername.jsp" />
+	</definition>
+	<definition name="web.changepassword.first" extends="layout.web.changepassword">
+		<put-attribute name="body" value="/WEB-INF/views/login/changepassword.jsp" />
+	</definition>
+	<definition name="web.blankPage" template="/WEB-INF/views/layout/thankyou.jsp">
+		<!-- <put-attribute name="body" value="/WEB-INF/views/layout/thankyou.jsp" /> -->
+	</definition>
+	<definition name="web.resetpassword" extends="layout.web.default">
+		<put-attribute name="title" value="Reset Password Details" />
+		<put-attribute name="body" value="/WEB-INF/views/user/adminresetpassword.jsp"/>
+	</definition>
+	<definition name="web.addconcept" extends="layout.web.default">
+		<put-attribute name="body" value="/WEB-INF/views/concept/addconcept.jsp" />
+	</definition>
+	<definition name="web.addconceptdetails" extends="layout.web.default">
+		<put-attribute name="body" value="/WEB-INF/views/concept/addconceptdetails.jsp" />
+	</definition>
+	<definition name="web.concept.conceptlist" extends="layout.web.default">
+		<put-attribute name="body" value="/WEB-INF/views/concept/conceptlist.jsp" />
+	</definition>
+	<definition name="web.master.department" extends="layout.web.default">		
+		<put-attribute name="body" value="/WEB-INF/views/masters/department.jsp" />
+	</definition>
+	<definition name="web.master.agency" extends="layout.web.default">		
+		<put-attribute name="body" value="/WEB-INF/views/masters/agency.jsp" />
+	</definition>
+	<definition name="web.master.lineministry" extends="layout.web.default">		
+		<put-attribute name="body" value="/WEB-INF/views/masters/lineministry.jsp" />
+	</definition>
+	<definition name="web.edit.department" extends="layout.web.default">
+		<put-attribute name="body" value="/WEB-INF/views/masters/editdepartment.jsp" />
+	</definition>
+	
+	<definition name="web.assignedProjectList" extends="layout.web.default">		
+		<put-attribute name="body" value="/WEB-INF/views/user/assignedProjectList.jsp" />
+	</definition>
+	
+	<definition name="web.assignProject" extends="layout.web.default">		
+		<put-attribute name="body" value="/WEB-INF/views/user/assignProject.jsp" />
+	</definition>
+	
+	<definition name="web.edit.agency" extends="layout.web.default">
+		<put-attribute name="body" value="/WEB-INF/views/masters/editAgency.jsp" />
+	</definition>
+	
+	<definition name="web.edit.lineministry" extends="layout.web.default">
+		<put-attribute name="body" value="/WEB-INF/views/masters/editlineministry.jsp" />
+	</definition>
+	
+	<definition name="web.master.fundingagency" extends="layout.web.default">		
+		<put-attribute name="body" value="/WEB-INF/views/masters/fundingagency.jsp" />
+	</definition>
+	
+	<definition name="web.master.editfundingagency" extends="layout.web.default">		
+		<put-attribute name="body" value="/WEB-INF/views/masters/editfundingagency.jsp" />
+	</definition>
+	
+	<definition name="web.change.password" extends="layout.web.default">		
+		<put-attribute name="body" value="/WEB-INF/views/user/changeLoginPassword.jsp" />
+	</definition>
+	
+	<definition name="web.master.locationmaster" extends="layout.web.default">		
+		<put-attribute name="body" value="/WEB-INF/views/masters/locationmaster.jsp" />
+	</definition>
+	
+	<definition name="web.edit.locationmaster" extends="layout.web.default">
+		<put-attribute name="body" value="/WEB-INF/views/masters/editlocationmaster.jsp" />
+	</definition>
+	<definition name="web.edit.conceptdetails" extends="layout.web.default">
+		<put-attribute name="body" value="/WEB-INF/views/concept/editconceptdetails.jsp" />
+	</definition>
+	
+	<definition name="web.master.organization" extends="layout.web.default">		
+		<put-attribute name="body" value="/WEB-INF/views/masters/organization.jsp" />
+	</definition>
+		
+	<definition name="web.master.role" extends="layout.web.default">		
+		<put-attribute name="body" value="/WEB-INF/views/masters/role.jsp" />
+	</definition>
+	
+	<definition name="web.master.porttype" extends="layout.web.default">		
+		<put-attribute name="body" value="/WEB-INF/views/masters/porttype.jsp" />
+	</definition>
+	
+	<definition name="web.master.port" extends="layout.web.default">		
+		<put-attribute name="body" value="/WEB-INF/views/masters/port.jsp" />
+	</definition>
+	
+	<definition name="web.master.maritimeboard" extends="layout.web.default">		
+		<put-attribute name="body" value="/WEB-INF/views/masters/maritimeboard.jsp" />
+	</definition>
+	
+	<definition name="web.master.directorateofports" extends="layout.web.default">		
+		<put-attribute name="body" value="/WEB-INF/views/masters/directorateofports.jsp" />
+	</definition>
+	
+	<definition name="web.master.dspvname" extends="layout.web.default">		
+		<put-attribute name="body" value="/WEB-INF/views/masters/spvname.jsp" />
+	</definition>
+	
+	<definition name="web.reset.pwd" extends="layout.web.default">
+		<put-attribute name="title" value="Reset Password" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/login/resetpassword.jsp" />
+	</definition>
+</tiles-definitions>
+
+
+
+
+

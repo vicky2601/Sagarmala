@@ -1,0 +1,203 @@
+ 
+.cpais-login-bg {
+	background: url(../images/cpais-login.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.cpais-login .form-group {
+	position: relative;
+}
+
+.cpais-login {
+	background: #FFF;
+	padding: 22px;
+}
+
+.cpais-login input {
+	border: none;
+	border: 1px solid #e1d7d7 !important;
+	box-shadow: none !important;
+	border-radius: 0;
+}
+
+.cpais-login label {
+	color: #9b9b9b;
+}
+
+.cpais-login button {
+	background: #ef4723;
+	border: none;
+	border-radius: 0;
+	width: 100%;
+	color: #fff;
+	transition-duration: 0.6s;
+}
+
+.cpais-login button:hover {
+	background: #3da6d9;
+	transition-duration: 0.6s;
+	color: #fff;
+}
+
+.cpais-heading {
+	margin-top: 5%;
+	visibility: visible;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+.cpais-heading h1 {
+	text-align: center;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	font-size: 140%;
+	font-weight: 400;
+	padding-bottom: 8px;
+	background: url(../images/line-wi.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 23px !important;
+}
+
+.cpais-login .checkbox {
+	text-align: center;
+}
+
+.cpais-login .forget-icon {
+	background: url(../images/forget-icon.png) no-repeat;
+	background-position: 62%;
+	margin-top: 14px;
+}
+
+.forget-i {
+	padding-left: 200px;
+}
+
+.cpais-login .forget-icon a {
+	color: #9b9b9b;
+}
+
+.error-msg {
+	background-color: #C04848;
+	color: #fff;
+	font-size: 12px;
+	position: absolute;
+	padding: 5px;
+	top: 116%;
+	right: 0;
+	z-index: 9;
+	display: none;
+}
+
+.error-msg:after {
+	content: '';
+	background: url(../images/after-arrow.png) no-repeat;
+	width: 11px;
+	height: 9px;
+	position: absolute;
+	top: -8px;
+	right: 5px;
+}
+
+.capt {
+	font-size: 25px;
+    font-weight: bolder;
+    background-color: #f4e9ef;
+    padding-left: 10px;
+    width: 184px;
+}
+
+.navbar-brand-centered {
+	position: absolute;
+	left: 50%;
+	display: block;
+	width: 160px;
+	text-align: center;
+	background-color: transparent;
+}
+
+.navbar>.container .navbar-brand-centered, .navbar>.container-fluid .navbar-brand-centered
+	{
+	margin-left: -80px;
+}
+
+.myfooter {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #1e90ff;
+   color: white;
+   text-align: center;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/mos2.jpg");
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 27px;
+  margin-bottom:0px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3.38px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
